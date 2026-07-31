@@ -1,5 +1,5 @@
 include <config.scad>;
-use <grooves.scad>;
+use <body.scad>;
 
 //===========================================
 // EYE PADS

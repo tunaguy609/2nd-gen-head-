@@ -13,6 +13,7 @@ expansion_two_end_radius = 10.8;
 
 transition_end = 53;
 head_length = 65;
+headLength = head_length;
 straight_section_length = head_length - transition_end;
 
 groove_count = 2;
@@ -28,6 +29,14 @@ eyePadDepth = 0.6;
 eyeDiameter = 6;
 eyeDepth = 1.2;
 
+showLeaderHole = true;
+leaderHole = 2.5;
+spigotLength = 0;
+skirtPocketDepth = 20;
+skirtPocketDiameter = 18;
+
 nose_samples = 8;
 
+$fa = 4;
+$fs = 0.4;
 $fn = 96;
