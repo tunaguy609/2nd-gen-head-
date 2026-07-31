@@ -1,5 +1,6 @@
 include <config.scad>;
 use <grooves.scad>;
+use <eyes.scad>;
 
 function rounded_nose_points() = [
     for (step = [0 : nose_samples])
@@ -34,7 +35,11 @@ module head_body() {
         polygon(body_profile_points());
 }
 
-difference() {
-    head_body();
-    decorative_grooves();
+module lureWithGrooves() {
+    difference() {
+        head_body();
+        decorative_grooves();
+    }
 }
+
+lureWithEyes();
