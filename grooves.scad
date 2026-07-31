@@ -12,8 +12,8 @@ module groove_cut(z_position) {
 
 module decorative_grooves() {
     assert(
-        groove_count == 0 || groove_z(groove_count - 1) >= nose_length,
-        "Grooves extend into the tapered nose; reduce groove_count or spacing."
+        groove_count == 0 || groove_z(groove_count - 1) >= transition_end,
+        "Grooves extend ahead of the straight rear section; reduce groove_count or spacing."
     );
 
     for (index = [0 : groove_count - 1]) {
